@@ -2,6 +2,7 @@ package ui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -12,7 +13,7 @@ import java.awt.event.MouseListener;
  * Time: 14:33
  * To change this template use File | Settings | File Templates.
  */
-public class Footer extends JPanel{
+public class Footer extends JPanel {
 
     private final Button mApply = new Button("Configurer");
 
@@ -21,6 +22,9 @@ public class Footer extends JPanel{
         add(mApply);
     }
 
+    public void addActionListener(AbstractAction action) {
+        mApply.addActionListener(action);
+    }
 
 
 

@@ -17,34 +17,39 @@ public class Body extends JPanel {
     JLabel mSSID = new JLabel();
     Input mPSK = new Input(20);
 
-
-    WifiDetector wifiDetector = new WifiDetector();
-
-    public Body () {
+    public Body (String network) {
         setBackground(GrowRes.WHITE);
         mSSID.setForeground(GrowRes.GREEN);
 
-        Component c = getTopLevelAncestor();
-
-        if(c == null)
-            System.out.println("ARG");
-
-
-        String ssid = wifiDetector.getCurrentSSID();
-        if(ssid == null) {
+        if(network == null) {
             mSSID.setText("Not connected!");
         } else {
-            mSSID.setText(ssid);
+            mSSID.setText(network);
         }
 
         mPSK.setCaret(new GreenCaret());
-
 
         add(mSSID);
         add(mPSK);
 
         requestFocus();
 
+    }
+
+    public String getPSK() {
+        return mPSK.getText();
+    }
+
+    public void loading() {
+        remove(mPSK);
+        repaint();
+        mSSID.setText("Loading...");
+    }
+
+    public void failed() {
+        remove(mPSK);
+        repaint();
+        mSSID.setText("FAILED!");
     }
 
 
