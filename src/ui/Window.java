@@ -1,12 +1,13 @@
+package ui;
+
 import javax.swing.*;
-import java.awt.*;
 
 /**
  * @author Aleks
  * @version : 1.0
  * Fuck NYC (and Melo') :D
  *
- * Main Window of the application
+ * Main ui.Window of the application
  */
 public class Window extends JFrame {
 

@@ -2,17 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Body.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Footer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GreenCaret.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GrowRes.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Header.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/WifiDetector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Window.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/javax.usb.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsr80_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/usb4java_1_0_0.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/growstuff_ico2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UsbDetector.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/javax.usb.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Bus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Configuration.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/ControlMessage.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Descriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Device.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/DeviceDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/DeviceSPI.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Endpoint.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Host.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/HostFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Hub.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/Interface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/PortIdentifier.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/USBException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/USBListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/USBListenerAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/core/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/devices/Kodak.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/devices/Rio500.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/devices/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/linux/DeviceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/linux/HID.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/linux/Linux.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/linux/USB.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/linux/USBException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/linux/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/HostProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/RemoteBus.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/RemoteDeviceSPI.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/RemoteHost.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/RemoteHostFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/RemoteUSBListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/USBD.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/USBListenerProxy.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/remote/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/util/LangCode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/util/ShowTree.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/util/USBSocket.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/util/package.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/view/Foo.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/view/HubNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/view/KodakNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/view/RioNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/view/USBNode.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/usb/view/package.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Body.java" afterPath="$PROJECT_DIR$/src/ui/Body.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Footer.java" afterPath="$PROJECT_DIR$/src/ui/Footer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GreenCaret.java" afterPath="$PROJECT_DIR$/src/ui/GreenCaret.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/GrowRes.java" afterPath="$PROJECT_DIR$/src/ui/GrowRes.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Header.java" afterPath="$PROJECT_DIR$/src/ui/Header.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/WifiDetector.java" afterPath="$PROJECT_DIR$/src/tools/WifiDetector.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Window.java" afterPath="$PROJECT_DIR$/src/ui/Window.java" />
     </list>
     <ignored path="GrowStuff.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +73,7 @@
     <file path="/Body.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391098624707" ignored="false" />
     <file path="/Footer.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391017446301" ignored="false" />
     <file path="/FancyCaret.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391098576910" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391099163727" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391099349901" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +126,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/UsbDetector.java" line="43" class="UsbDetector" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/ui/Window.java" line="23" class="Window" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -97,7 +141,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Window.java" line="22" class="Window" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/tools/WifiDetector.java" line="23" class="tools.WifiDetector" package="tools">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -112,7 +156,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/WifiDetector.java" line="21" class="WifiDetector" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/tools/WifiDetector.java" line="42" class="tools.WifiDetector" package="tools">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -127,7 +171,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/WifiDetector.java" line="40" class="WifiDetector" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/tools/WifiDetector.java" line="31" class="tools.WifiDetector" package="tools">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -142,22 +186,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/WifiDetector.java" line="29" class="WifiDetector" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/Body.java" line="24" class="Body" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/ui/Body.java" line="26" class="ui.Body" package="ui">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -182,37 +211,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UsbDetector.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UsbDetector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="48" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Window.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Window.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+            <state line="22" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Footer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Footer.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/Footer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="56" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+            <state line="16" column="56" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Body.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Body.java">
+      <file leaf-file-name="Body.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/Body.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="46" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.9465241">
+            <state line="57" column="46" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WifiDetector.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tools/WifiDetector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="275" selection-end="275" vertical-scroll-proportion="0.2215909">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,11 +252,11 @@
         </entry>
       </file>
       <file leaf-file-name="GreenCaret.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GreenCaret.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/GreenCaret.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="26" selection-start="468" selection-end="468" vertical-scroll-proportion="-10.2">
+            <state line="18" column="26" selection-start="414" selection-end="414" vertical-scroll-proportion="-10.2">
               <folding>
-                <element signature="e#0#1733#0" expanded="true" />
+                <element signature="e#0#1679#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -233,9 +264,9 @@
         </entry>
       </file>
       <file leaf-file-name="Header.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Header.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="35" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+            <state line="18" column="35" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -271,6 +302,7 @@
         <option value="$PROJECT_DIR$/src/GreenCaret.java" />
         <option value="$PROJECT_DIR$/src/Footer.java" />
         <option value="$PROJECT_DIR$/src/Body.java" />
+        <option value="$PROJECT_DIR$/src/ui/Body.java" />
       </list>
     </option>
   </component>
@@ -354,7 +386,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="usb" />
+              <option name="myItemId" value="tools" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -486,7 +518,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Window" />
+      <option name="MAIN_CLASS_NAME" value="ui.Window" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -548,7 +580,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="52" width="1920" height="1028" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -564,8 +596,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.6486784" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35132158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.67070484" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35132158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -637,26 +669,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/usb/core/USBListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="25" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.62562394" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/javax.usb.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/growstuff_ico.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UsbDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="346" selection-end="346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/awt/Dimension.java">
@@ -666,56 +681,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WifiDetector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1301" selection-end="1339" vertical-scroll-proportion="0.6524064">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GrowRes.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="33" selection-start="419" selection-end="419" vertical-scroll-proportion="0.42780748">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Header.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
+        <state line="18" column="35" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Window.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+        <state line="22" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GreenCaret.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/GreenCaret.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="26" selection-start="468" selection-end="468" vertical-scroll-proportion="-10.2">
+        <state line="18" column="26" selection-start="414" selection-end="414" vertical-scroll-proportion="-10.2">
           <folding>
-            <element signature="e#0#1733#0" expanded="true" />
+            <element signature="e#0#1679#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Footer.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/Footer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+        <state line="16" column="56" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Body.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/Body.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="46" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.9465241">
+        <state line="57" column="46" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/WifiDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="275" selection-end="275" vertical-scroll-proportion="0.2215909">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

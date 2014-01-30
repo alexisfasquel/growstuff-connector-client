@@ -1,17 +1,15 @@
-/*
+package ui;/*
 Java Swing, 2nd Edition
 By Marc Loy, Robert Eckstein, Dave Wood, James Elliott, Brian Cole
 ISBN: 0-596-00408-7
 Publisher: O'Reilly 
 */
-// GreenCaret.java
+// ui.GreenCaret.java
 //Another (fancier) custom caret class.
 //
 
 import java.awt.*;
 
-import javax.swing.*;
-import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultCaret;
 import javax.swing.text.JTextComponent;
 
