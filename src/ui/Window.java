@@ -1,5 +1,7 @@
 package ui;
 
+import com.jcraft.jsch.JSchException;
+import tools.RPi;
 import tools.Wifi;
 
 import javax.swing.*;
@@ -40,13 +42,25 @@ public class Window extends JFrame {
         mFooter.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(Wifi.connect(mCurrentSSID, mBody.getPSK())) {
+
+                String password = mBody.getPSK();
+
+                //mBody.getPSK()
+
+                if(Wifi.connect(mCurrentSSID, password)) {
                     mBody.loading();
                 } else {
                     mBody.failed();
                 }
 
-                Wifi.connect("aleks", "");
+                if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
+                    try {
+                        RPi.configure(mCurrentSSID, password);
+                    } catch (JSchException e1) {
+                        System.out.println(e1.getMessage());
+                    }
+                }
+
             }
         });
 

@@ -7,9 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="usb4java-1.0.0" level="project" />
-    <orderEntry type="library" name="jsr80-1.0.1" level="project" />
-    <orderEntry type="library" name="commons-lang3-3.2.1" level="project" />
+    <orderEntry type="library" name="jsch-0.1.50" level="project" />
   </component>
 </module>
 

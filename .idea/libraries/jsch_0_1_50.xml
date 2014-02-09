@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="commons-lang3-3.2.1">
+  <library name="jsch-0.1.50">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

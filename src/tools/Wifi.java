@@ -16,6 +16,8 @@ public class Wifi {
 
     private static final String SSID_CMD = "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I";
     private static final String CONNECTION_CMD = "networksetup -setairportnetwork en0";
+    private static final String GETIP_CMD = "ifconfig en0 | grep 'inet' | cut -d\" \" -f2 | awk '{ print $1 }' | tail -1";
+
 
     private Wifi() {}
 
@@ -51,7 +53,6 @@ public class Wifi {
 
     public static boolean connect(String SSID, String PSK) {
         Process p;
-        StringBuffer output = new StringBuffer();
         try {
             if(SSID == null || PSK == null) {
                 return false;
@@ -62,10 +63,56 @@ public class Wifi {
             System.out.println(CONNECTION_CMD + " " + SSID + " " +PSK);
             p.waitFor();
 
+
             BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
             while (reader.readLine() != null) {
                 //If the cmd did return anything then something went wrong
                 return false;
+            }
+            return true;
+        } catch (IOException | InterruptedException e) {
+            return false;
+        }
+    }
+
+    public static boolean checkIpAdress() {
+        try {
+            Thread.sleep(5000);
+            //Checking for an ip adress
+            if(getip()) {
+                System.out.println("YAY : IP POWA");
+                return true;
+            } else {
+                System.out.println("NO LUCK, retrying");
+                //If no ip retrying one more time and returning result
+                Thread.sleep(5000);
+                if(getip()) {
+                    System.out.println("YAY : IP POWA");
+                    return true;
+                } else {
+                    System.out.println("BOWOUHOU");
+                    return false;
+                }
+            }
+        } catch (InterruptedException e) {
+            return false;
+        }
+    }
+
+
+    private static boolean getip() {
+        Process p;
+        try {
+
+            //Executing the shell command
+            System.out.println(GETIP_CMD);
+            p = Runtime.getRuntime().exec(GETIP_CMD);
+            p.waitFor();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            while (reader.readLine() != null) {
+                //If the cmd did return the ip adress then we're good
+                return true;
             }
             return true;
         } catch (IOException | InterruptedException e) {

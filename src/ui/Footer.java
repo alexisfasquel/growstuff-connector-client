@@ -49,23 +49,26 @@ public class Footer extends JPanel {
             g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             Dimension dimension = getSize();
 
+
+
             g2d.setColor(GrowRes.WHITE);
+            g2d.setStroke(new BasicStroke(3));
             int offset = dimension.height/2;
 
-            g2d.fillRect(offset, 0, dimension.width-dimension.height, dimension.height);
+            g.drawRoundRect(2, 2, dimension.width-4, dimension.height-4, dimension.height, dimension.height);
+            /*g2d.fillRect(offset, 0, dimension.width-dimension.height, dimension.height);
 
             g2d.fillOval(0, 0, dimension.height, dimension.height);
             g2d.fillOval(dimension.width-dimension.height, 0, dimension.height, dimension.height);
-
-            g2d.setColor(GrowRes.GREEN);
+                                                                  */
+            g2d.setColor(GrowRes.WHITE);
 
             FontMetrics metrics = g2d.getFontMetrics(getFont());
 
-            int heightPadding= dimension.height/2 - metrics.getHeight()/2;
-            System.out.println(heightPadding);
+            int heightPadding= metrics.getHeight() -1 ;
             int widthPadding = dimension.width/2 - metrics.stringWidth(getText())/2;
 
-            g2d.drawString(getText(), widthPadding, heightPadding+10);
+            g2d.drawString(getText(), widthPadding, heightPadding);
 
 
         }

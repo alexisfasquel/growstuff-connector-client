@@ -2,6 +2,7 @@ package ui;
 
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.text.JTextComponent;
 import java.awt.*;
 
 /**
@@ -15,7 +16,7 @@ public class Body extends JPanel {
 
 
     JLabel mSSID = new JLabel();
-    Input mPSK = new Input(20);
+    JTextComponent mPSK = new InputPwd(20);
 
     public Body (String network) {
         setBackground(GrowRes.WHITE);
@@ -41,19 +42,31 @@ public class Body extends JPanel {
     }
 
     public void loading() {
-        remove(mPSK);
+        mPSK = new Input(20);
         repaint();
-        mSSID.setText("Loading...");
+        mSSID.setText("Twitter username ?");
     }
 
     public void failed() {
         remove(mPSK);
         repaint();
         mSSID.setText("FAILED!");
+
     }
 
 
-    private class Input extends JPasswordField {
+    private class InputPwd extends JPasswordField {
+        public InputPwd (int size) {
+            super(size);
+            setForeground(GrowRes.GREEN);
+        }
+
+        @Override
+        public void setBorder(Border border) {}
+
+    }
+
+    private class Input extends JTextField {
         public Input (int size) {
             super(size);
             setForeground(GrowRes.GREEN);

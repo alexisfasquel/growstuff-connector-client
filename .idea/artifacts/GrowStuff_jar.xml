@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GrowStuff:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GrowStuff_jar</output-path>
+    <root id="archive" name="GrowStuff.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="GrowStuff" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jsch-0.1.50.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -12,7 +12,7 @@ import java.awt.*;
  */
 public class GrowRes {
 
-    public final static Color GREEN = new Color(0x39b54a);
+    public final static Color GREEN = new Color(0x39964A);
     public final static Color WHITE = new Color(0xffffff);
     public final static ImageIcon LOGO= new ImageIcon("res/growstuff_ico.png");
 
