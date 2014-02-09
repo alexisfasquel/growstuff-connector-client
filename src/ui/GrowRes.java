@@ -1,19 +1,117 @@
 package ui;
 
-import javax.swing.*;
+import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Aleks
- * Date: 28/01/14
- * Time: 22:38
- * To change this template use File | Settings | File Templates.
- */
+
 public class GrowRes {
 
-    public final static Color GREEN = new Color(0x39964A);
+    //-----------------------------------------------------------------
+    //                            COLORS
+    //-----------------------------------------------------------------
+    public final static Color GREEN = new Color(0x589a73);
     public final static Color WHITE = new Color(0xffffff);
-    public final static ImageIcon LOGO= new ImageIcon("res/growstuff_ico.png");
+
+
+    //-----------------------------------------------------------------
+    //                            STRINGS
+    //-----------------------------------------------------------------
+    public final static String STR_CONFIGURE_BUTTON = "Configure  ";
+    public final static String STR_WAITING_LABEL = "<html><head><style type=\"text/css\">" +
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>&nbsp;&nbsp;&nbsp;&nbsp;Please wait a litte bit ...</body></html>";
+    public final static String STR_INTRO_LABEL = "<html><head><style type=\"text/css\">\n" +
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>Hi! Welcome to the configuration panel!<br> Shall we start?</body></html>";
+
+
+
+
+    //-----------------------------------------------------------------
+    //                            FONTS
+    //-----------------------------------------------------------------
+    public static Font mFontLight = null;
+    public static Font mFontBold = null;
+
+
+    public static Font getFont(int size, boolean bold) {
+        try {
+            if(bold) {
+                if(mFontBold == null)
+                    mFontBold = Font.createFont(Font.TRUETYPE_FONT, new File("res/font/font_bold.ttf"));
+                return mFontBold.deriveFont((float)size);
+            } else {
+                if(mFontLight == null)
+                    mFontLight = Font.createFont(Font.TRUETYPE_FONT, new File("res/font/font.ttf"));
+                return mFontLight.deriveFont((float)size);
+            }
+        } catch (FontFormatException | IOException e) { }
+
+        return null;
+    }
+
+
+
+    //-----------------------------------------------------------------
+    //                            IMAGES
+    //-----------------------------------------------------------------
+    public static int LOGO= 0;
+    public static int ARROW_GREEN = 1;
+    public static int ARROW_WHITE = 2;
+    public static int RELOAD = 3;
+    public static int LOADING_1 = 4;
+    public static int LOADING_2 = 5;
+    public static int LOADING_3 = 6;
+
+    private static BufferedImage mLogo = null;
+    private static BufferedImage mArrowGreen = null;
+    private static BufferedImage mArrowWhite = null;
+    private static BufferedImage mReload = null;
+    private static BufferedImage mLoading1 = null;
+    private static BufferedImage mLoading2 = null;
+    private static BufferedImage mLoading3 = null;
+
+    private static boolean mLoaded = false;
+
+
+    public static BufferedImage getImage(int imageID) {
+        if(!mLoaded) {
+            loadImages();
+        }
+        if(imageID == LOGO) {
+            return mLogo;
+        } else if (imageID == ARROW_GREEN) {
+            return mArrowGreen;
+        } else if (imageID == ARROW_WHITE) {
+            return mArrowWhite;
+        } else if (imageID == LOADING_1) {
+            return mLoading1;
+        } else if (imageID == LOADING_2) {
+            return mLoading2;
+        } else if (imageID == LOADING_3) {
+            return mLoading3;
+        } else {
+
+            return mReload;
+        }
+    }
+
+    private static void loadImages() {
+        mLoaded = true;
+        try {
+            mLogo = ImageIO.read(new File("res/growstuff_ico.png"));
+            mArrowWhite = ImageIO.read(new File("res/arrow_ico_white.png"));
+            mArrowGreen = ImageIO.read(new File("res/arrow_ico_green.png"));
+            mReload = ImageIO.read(new File("res/reload_ico.png"));
+            mLoading1 = ImageIO.read(new File("res/loading_1.png"));
+            mLoading2 = ImageIO.read(new File("res/loading_2.png"));
+            mLoading3 = ImageIO.read(new File("res/loading_3.png"));
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
 
 }
