@@ -76,19 +76,6 @@ public class Body extends JPanel {
         return mPSK.getText();
     }
 
-    public void loading() {
-        mPSK = new Input(20);
-        repaint();
-        mSSID.setText("Twitter username ?");
-    }
-
-    public void failed() {
-        remove(mPSK);
-        repaint();
-        mSSID.setText("FAILED!");
-
-    }
-
 
     private class ReloadButton extends JButton implements MouseListener {
 
@@ -140,7 +127,6 @@ public class Body extends JPanel {
                             Thread.sleep(20);
                             mButton.repaint();
                         } catch (InterruptedException e) {
-                            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                         }
                     }
                 }

@@ -7,6 +7,7 @@ import tools.Wifi;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author Aleks
@@ -22,6 +23,9 @@ public class Window extends JFrame {
     private Header mHeader;
     private Body mBody;
     private Footer mFooter;
+
+
+    private LoadingPanel  mLoadingPanel = new LoadingPanel();
 
     private String mCurrentSSID;
 
@@ -42,46 +46,60 @@ public class Window extends JFrame {
         mFooter.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                /*String password = mBody.getPSK();
-
-                //mBody.getPSK()
-
-                if(Wifi.connect(mCurrentSSID, password)) {
-                    mBody.loading();
-                } else {
-                    mBody.failed();
-                }
-
-                if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
-                    try {
-                        RPi.configure(mCurrentSSID, password);
-                    } catch (JSchException e1) {
-                        System.out.println(e1.getMessage());
-                    }
-                }
-                 */
                 new DisapearAnimation().execute();
+                new Connector().execute();
 
             }
         });
 
+        mLoadingPanel.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mLoadingPanel.disappear();
+            }
+        });
 
         add(mHeader);
         add(mBody);
         add(mFooter);
 
-
-
         setVisible(true);
-
-
-
 
     }
 
+
     //Animating a little bit (yep, I know, that's ugly)
-    public class DisapearAnimation extends SwingWorker<Void, Object> {
+    private class Connector extends SwingWorker<Boolean, Object> {
+        @Override
+        public Boolean doInBackground() {
+            String password = mBody.getPSK();
+
+            if(Wifi.connect(mCurrentSSID, password)) {
+                if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
+                    try {
+                        RPi.configure(mCurrentSSID, password);
+                    } catch (JSchException e1) {
+                        System.out.println(e1.getMessage());
+                        return false;
+                    }
+                }
+            } else {
+                return false;
+            }
+            return true;
+        }
+
+        @Override
+        protected void done() {
+            try {
+                mLoadingPanel.stop(get());
+            } catch (InterruptedException | ExecutionException e) {}
+        }
+    }
+
+
+    //Animating a little bit (yep, I know, that's ugly)
+    private class DisapearAnimation extends SwingWorker<Void, Object> {
         @Override
         public Void doInBackground() {
             try {
@@ -90,9 +108,9 @@ public class Window extends JFrame {
                 int i = 0;
                 float opacity = 1;
                 while ((height += 6) <= getHeight()) {
-                    //mHeader.setPreferredSize(new Dimension(Short.MAX_VALUE, height));
-                    //mHeader.setMinimumSize(new Dimension(Short.MAX_VALUE, height));
-                    //mHeader.setMaximumSize(new Dimension(Short.MAX_VALUE, height));
+                    mHeader.setPreferredSize(new Dimension(Short.MAX_VALUE, height));
+                    mHeader.setMinimumSize(new Dimension(Short.MAX_VALUE, height));
+                    mHeader.setMaximumSize(new Dimension(Short.MAX_VALUE, height));
 
                     mHeader.setOpacity(opacity);
                     mBody.setOpacity(opacity);
@@ -118,9 +136,9 @@ public class Window extends JFrame {
 
             revalidate();
 
-            LoadingPanel pan = new LoadingPanel();
-            add(pan);
+            add(mLoadingPanel);
             revalidate();
+            mLoadingPanel.appear();
         }
     }
 

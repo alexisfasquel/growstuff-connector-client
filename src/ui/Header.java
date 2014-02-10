@@ -1,5 +1,7 @@
 package ui;
 
+import ui.components.WhiteLabel;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -14,7 +16,7 @@ import java.io.File;
 public class Header extends JPanel {
 
     private Logo mLogo = new Logo();
-    private WhiteLabel mText = new WhiteLabel(GrowRes.STR_INTRO_LABEL, SwingConstants.CENTER);
+    private WhiteLabel mText = new WhiteLabel(GrowRes.STR_INTRO_LABEL);
 
     public Header() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -33,9 +35,6 @@ public class Header extends JPanel {
         mTextPanel.setBackground(GrowRes.GREEN);
         mTextPanel.setLayout(new GridBagLayout());
 
-        mText.setForeground(GrowRes.WHITE);
-        mText.setBackground(GrowRes.GREEN);
-
         mTextPanel.add(mText);
 
 
@@ -52,7 +51,7 @@ public class Header extends JPanel {
         Image mImage = GrowRes.getImage(GrowRes.LOGO);
 
         public Logo() {
-            setPreferredSize(new Dimension(mImage.getWidth(null)/2, mImage.getHeight(null)/2));
+            setPreferredSize(new Dimension(mImage.getWidth(null) / 2, mImage.getHeight(null) / 2));
         }
 
         @Override
@@ -61,29 +60,6 @@ public class Header extends JPanel {
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             g2.drawImage(mImage, 0, 0, mImage.getWidth(null)/2, mImage.getHeight(null)/2, null);
         }
-    }
-
-
-    private class WhiteLabel extends JLabel {
-        private float mOpacity = 1f;
-
-        public WhiteLabel(String mess, int constant) {
-            super(mess, constant);
-        }
-
-        public void setOpacity(float opacity) {
-            mOpacity = opacity;
-        }
-
-        @Override
-        protected void paintComponent( Graphics g )
-        {
-            Composite alphaComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, mOpacity);
-            Graphics2D g2d = (Graphics2D)g.create();
-            g2d.setComposite( alphaComposite );
-            super.paintComponent( g2d );
-        }
-
     }
 
 }

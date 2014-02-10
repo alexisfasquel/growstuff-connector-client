@@ -21,7 +21,7 @@ public class GrowRes {
     //-----------------------------------------------------------------
     public final static String STR_CONFIGURE_BUTTON = "Configure  ";
     public final static String STR_WAITING_LABEL = "<html><head><style type=\"text/css\">" +
-            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>&nbsp;&nbsp;&nbsp;&nbsp;Please wait a litte bit ...</body></html>";
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; padding-left:15px; } </head><body >Please wait a litte bit...</body></html>";
     public final static String STR_INTRO_LABEL = "<html><head><style type=\"text/css\">\n" +
             "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>Hi! Welcome to the configuration panel!<br> Shall we start?</body></html>";
 

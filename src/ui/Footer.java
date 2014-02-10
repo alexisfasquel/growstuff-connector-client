@@ -19,28 +19,33 @@ public class Footer extends JPanel {
 
     private final Button mApply = new Button(GrowRes.STR_CONFIGURE_BUTTON);
 
-    Image mArrowIcoWhite;
-    Image mArrowIcoGreen;
+    private Image mArrowIcoWhite;
+    private Image mArrowIcoGreen;
 
-    boolean mfilled = false;
+    private boolean mfilled = false;
 
     public Footer() {
 
         setBackground(GrowRes.GREEN);
         setLayout(new GridBagLayout());
-        try {
-            mArrowIcoWhite = ImageIO.read(new File("res/arrow_ico_white.png"));
-            mArrowIcoGreen = ImageIO.read(new File("res/arrow_ico_green.png"));
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+
+        //Setting up the button centered in the second column
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.anchor = GridBagConstraints.CENTER;
+
+        gbc.weightx = 2.0;
+        gbc.gridx = 2;
+
+        add(mApply, gbc);
+
+        gbc.gridx = 1;
+        //Adding a panel in the first column to fill up the space
         JPanel p = new JPanel();
-        p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
-        p.add(mApply);
+        p.setBackground(GrowRes.GREEN);
+        add(p, gbc);
 
-
-        add(p);
-
+        mArrowIcoWhite = GrowRes.getImage(GrowRes.ARROW_WHITE);
+        mArrowIcoGreen = GrowRes.getImage(GrowRes.ARROW_GREEN);
     }
 
     public void addActionListener(AbstractAction action) {
@@ -64,6 +69,7 @@ public class Footer extends JPanel {
             setMargin(new Insets(5, 10, 5, 10));
             addMouseListener(this);
         }
+
         public void setOpacity(float opacity) {
             mOpacity = opacity;
         }
