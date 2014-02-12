@@ -1,10 +1,10 @@
 package ui;
 
+import ui.components.Footer;
 import ui.components.WhiteLabel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseListener;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,7 +16,13 @@ import java.awt.event.MouseListener;
 public class LoadingPanel extends JPanel {
 
 
+    private Window.AnimationListener mListener;
+
+    private Thread mLoading;
+
+    private Image mLogo = GrowRes.getImage(GrowRes.LOGO);
     private LoadingIcon mLoadingIcon = new LoadingIcon();
+
     private WhiteLabel mWhiteLabel = new WhiteLabel(GrowRes.STR_WAITING_LABEL);
     private Footer mFooter = new Footer();
 
@@ -25,6 +31,7 @@ public class LoadingPanel extends JPanel {
     public LoadingPanel() {
         setBackground(GrowRes.GREEN);
         setLayout(new GridBagLayout());
+
 
         GridBagConstraints gbc = new GridBagConstraints();
 
@@ -44,7 +51,10 @@ public class LoadingPanel extends JPanel {
 
         add(mFooter, gbc);
 
-        new Thread(mLoadingIcon).start();
+        mFooter.setOpacity(0);
+
+        mLoading = new Thread(mLoadingIcon);
+        mLoading.start();
 
     }
 
@@ -56,20 +66,32 @@ public class LoadingPanel extends JPanel {
         new AppearAnimation().start();
     }
 
-    public void disappear() {
+    public void disappear(Window.AnimationListener listener) {
         new DisappearAnimation().start();
+        mListener = listener;
     }
 
     public void stop(boolean succes) {
-        mLoadingIcon.stop();
+        mLoadingIcon.stop(succes);
         if(succes) {
-            mWhiteLabel.setText("Succes");
+            mWhiteLabel.setText(GrowRes.STR_SUCCES_LABEL);
+            mFooter.setText(GrowRes.STR_SUCCES_BUTTON);
         } else {
-            mWhiteLabel.setText("Failed");
+            mWhiteLabel.setText(GrowRes.STR_FAILED_LABEL);
+            mFooter.setText(GrowRes.STR_FAILED_BUTTON);
         }
+
         new FooterAppearAnimation().start();
     }
 
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        Graphics2D g2 = (Graphics2D) g;
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2.drawImage(mLogo, 20, 15, mLogo.getWidth(null)/2, mLogo.getHeight(null)/2, null);
+    }
 
 
 
@@ -84,8 +106,15 @@ public class LoadingPanel extends JPanel {
             setPreferredSize(new Dimension(mImage.getWidth(null) / 2, mImage.getHeight(null) / 2));
         }
 
-        public void stop() {
+        public void stop(boolean succes) {
             mContinue = false;
+            mLoading.interrupt();
+            if(succes) {
+                mImage = GrowRes.getImage(GrowRes.LOADING_3);
+            } else {
+                mImage = GrowRes.getImage(GrowRes.LOADING_1);
+            }
+            repaint();
         }
 
         @Override
@@ -134,11 +163,14 @@ public class LoadingPanel extends JPanel {
                 } catch (InterruptedException e) {}
                 opacity -= 0.05f;
                 repaint();
+                revalidate();
             }
             mOpacity = 0;
             mWhiteLabel.setOpacity(0);
             mFooter.setOpacity(0);
+            mListener.onFinish();
         }
+
     }
 
 

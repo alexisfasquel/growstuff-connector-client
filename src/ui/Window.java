@@ -18,127 +18,105 @@ import java.util.concurrent.ExecutionException;
  */
 public class Window extends JFrame {
 
+    private MainPanel mMainPanel;
+    private LoadingPanel mLoadingPanel = new LoadingPanel();
 
+    private boolean mSucces = false;
 
-    private Header mHeader;
-    private Body mBody;
-    private Footer mFooter;
+    public interface AnimationListener {
+        public void onFinish();
+    }
 
-
-    private LoadingPanel  mLoadingPanel = new LoadingPanel();
-
-    private String mCurrentSSID;
 
     public Window() {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(400, 300);
+        setSize(800, 500);
 
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         getContentPane().setBackground(GrowRes.GREEN);
 
-        mCurrentSSID = Wifi.getCurrentSSID();
 
-        mHeader = new Header();
-        mBody = new Body(Wifi.getCurrentSSID());
-        mFooter = new Footer();
+        init();
 
-        mFooter.addActionListener(new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new DisapearAnimation().execute();
-                new Connector().execute();
+        setVisible(true);
+    }
 
-            }
-        });
-
+    private void init() {
+        remove(mLoadingPanel);
+        mLoadingPanel = new LoadingPanel();
         mLoadingPanel.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                mLoadingPanel.disappear();
+                mLoadingPanel.disappear(new AnimationListener() {
+                    @Override
+                    public void onFinish() {
+                        if(mSucces) {
+                            System.exit(0);
+                        } else {
+                            init();
+                        }
+                    }
+                });
             }
         });
 
-        add(mHeader);
-        add(mBody);
-        add(mFooter);
-
-        setVisible(true);
-
+        mMainPanel = new MainPanel();
+        mMainPanel.addActionListener(new AbstractAction() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                mMainPanel.disappear(new AnimationListener() {
+                    @Override
+                    public void onFinish() {
+                        configure();
+                    }
+                });
+            }
+        });
+        add(mMainPanel);
+        revalidate();
     }
+
+    private void configure() {
+        remove(mMainPanel);
+        add(mLoadingPanel);
+        revalidate();
+        mLoadingPanel.appear();
+        new Connector().execute();
+    }
+
+
 
 
     //Animating a little bit (yep, I know, that's ugly)
     private class Connector extends SwingWorker<Boolean, Object> {
         @Override
         public Boolean doInBackground() {
-            String password = mBody.getPSK();
-
-            if(Wifi.connect(mCurrentSSID, password)) {
+            String ssid = mMainPanel.getSSID().replace(":", " ").trim();
+            String password = mMainPanel.getPSK();
+            if(Wifi.connect(ssid, password)) {
                 if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
                     try {
-                        RPi.configure(mCurrentSSID, password);
+                        RPi.configure(ssid, password);
+                        Wifi.connect(ssid, password);
                     } catch (JSchException e1) {
                         System.out.println(e1.getMessage());
                         return false;
                     }
+                    return true;
                 }
             } else {
                 return false;
             }
-            return true;
+            return false;
         }
 
         @Override
         protected void done() {
             try {
-                mLoadingPanel.stop(get());
+                mSucces = get();
             } catch (InterruptedException | ExecutionException e) {}
-        }
-    }
-
-
-    //Animating a little bit (yep, I know, that's ugly)
-    private class DisapearAnimation extends SwingWorker<Void, Object> {
-        @Override
-        public Void doInBackground() {
-            try {
-
-                int height = mHeader.getHeight();
-                int i = 0;
-                float opacity = 1;
-                while ((height += 6) <= getHeight()) {
-                    mHeader.setPreferredSize(new Dimension(Short.MAX_VALUE, height));
-                    mHeader.setMinimumSize(new Dimension(Short.MAX_VALUE, height));
-                    mHeader.setMaximumSize(new Dimension(Short.MAX_VALUE, height));
-
-                    mHeader.setOpacity(opacity);
-                    mBody.setOpacity(opacity);
-                    mFooter.setOpacity(opacity);
-                    Thread.sleep(Math.abs(40 - i*2));
-                    mHeader.revalidate();
-                    revalidate();
-                    i++;
-                    opacity -= 0.08f;
-
-                }
-            } catch (InterruptedException e) {
-
-            }
-            return null;
-        }
-
-        @Override
-        protected void done() {
-            remove(mHeader);
-            remove(mBody);
-            remove(mFooter);
-
-            revalidate();
-
-            add(mLoadingPanel);
-            revalidate();
-            mLoadingPanel.appear();
+            mLoadingPanel.stop(mSucces);
         }
     }
 

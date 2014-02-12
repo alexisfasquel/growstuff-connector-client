@@ -19,13 +19,19 @@ public class GrowRes {
     //-----------------------------------------------------------------
     //                            STRINGS
     //-----------------------------------------------------------------
+    public final static String STR_SUCCES_BUTTON = "Configure  ";
+    public final static String STR_FAILED_BUTTON = "Try again  ";
     public final static String STR_CONFIGURE_BUTTON = "Configure  ";
     public final static String STR_WAITING_LABEL = "<html><head><style type=\"text/css\">" +
-            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; padding-left:15px; } </head><body >Please wait a litte bit...</body></html>";
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; padding-left:15px; } </head><body >Please wait a little bit...</body></html>";
     public final static String STR_INTRO_LABEL = "<html><head><style type=\"text/css\">\n" +
-            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>Hi! Welcome to the configuration panel!<br> Shall we start?</body></html>";
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body><br>Hi! Welcome to the configuration panel!<br>Shall we start?<br></body></html>";
 
+    public final static String STR_FAILED_LABEL = "<html><head><style type=\"text/css\">\n" +
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>We're very sorry about that <br>but something went wrong while configuring your GrowStuff device!<br>...</body></html>";
 
+    public final static String STR_SUCCES_LABEL = "<html><head><style type=\"text/css\">\n" +
+            "body { font-family: \"Kontrapunkt Light\"; text-align:center; font-size:25; } </head><body>Yay ! You're ready to use you're GrowStuff device<br>Let's meet at you're dashboard:</body></html>";
 
 
     //-----------------------------------------------------------------

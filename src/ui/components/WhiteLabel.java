@@ -23,8 +23,15 @@ public class WhiteLabel extends JLabel {
     {
         Composite alphaComposite = AlphaComposite.getInstance(AlphaComposite.SRC_OVER, mOpacity);
         Graphics2D g2d = (Graphics2D)g;
-        g2d.setComposite( alphaComposite );
-        super.paintComponent( g2d );
+        g2d.setComposite(alphaComposite);
+        super.paintComponent(g2d);
     }
+
+    @Override
+    public void setText(final String text) {
+        super.setText(text);
+    }
+
+
 
 }

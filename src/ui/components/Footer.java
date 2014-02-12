@@ -1,4 +1,6 @@
-package ui;
+package ui.components;
+
+import ui.GrowRes;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -52,9 +54,12 @@ public class Footer extends JPanel {
         mApply.addActionListener(action);
     }
 
-
     public void setOpacity(float opacity) {
         mApply.setOpacity(Math.min(1, Math.max(0, opacity)));
+    }
+
+    public void setText(String text) {
+        mApply.setText(text);
     }
 
 
@@ -73,6 +78,7 @@ public class Footer extends JPanel {
         public void setOpacity(float opacity) {
             mOpacity = opacity;
         }
+
 
         @Override
         public void paint(Graphics g) {

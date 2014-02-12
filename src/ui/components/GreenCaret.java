@@ -1,14 +1,17 @@
-package ui;/*
+package ui.components;/*
 Java Swing, 2nd Edition
 By Marc Loy, Robert Eckstein, Dave Wood, James Elliott, Brian Cole
 ISBN: 0-596-00408-7
 Publisher: O'Reilly 
 */
-// ui.GreenCaret.java
+// ui.components.GreenCaret.java
 //Another (fancier) custom caret class.
 //
 
+import ui.GrowRes;
+
 import java.awt.*;
+import java.awt.event.FocusListener;
 
 import javax.swing.text.DefaultCaret;
 import javax.swing.text.JTextComponent;
@@ -18,6 +21,8 @@ public class GreenCaret extends DefaultCaret {
     public GreenCaret() {
         setBlinkRate(750);
     }
+
+
 
     @Override
     public void paint(Graphics g) {

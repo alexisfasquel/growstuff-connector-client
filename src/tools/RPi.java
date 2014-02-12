@@ -21,34 +21,28 @@ public class RPi {
 
         try {
 
-            /*Session session = jsch.getSession("pi", "192.168.0.1");
-            jsch.setConfig("StrictHostKeyChecking", "no");
-            session.setConfig("StrictHostKeyChecking", "no");
-            session.setPassword("raspberry");
-
-            UserInfo usrInfo = new MyUserInfo();
-            session.setUserInfo(usrInfo);
-            session.connect(20000);*/
 
             Session session = jsch.getSession("pi", "192.168.0.1", 22);
-            //UserInfo ui = new MyUserInfo();
-            //session.setUserInfo(ui);
+
+
             //Not a good idea to disable key checking but only way to make it work for now
             //session.setConfig("StrictHostKeyChecking", "no");
             jsch.setConfig("StrictHostKeyChecking", "no");
             session.setPassword("growstuff");
-            session.connect(40000);
+            Thread.sleep(2000);
+            session.connect(30000);
+
 
             Channel channel = session.openChannel("exec");
 
-            ((ChannelExec)channel).setCommand("sudo ./networks/configure.sh " + SSID + " " + PSK + " & 2> /dev/null");
+            ((ChannelExec)channel).setCommand("sudo ./networks/configure.sh " + SSID + " " + PSK + " &");
 
             channel.setInputStream(null);
 
             ((ChannelExec)channel).setErrStream(System.err);
             InputStream in=channel.getInputStream();
 
-            channel.connect();
+            channel.connect(30000);
 
 
             byte[] tmp=new byte[1024];
@@ -72,38 +66,6 @@ public class RPi {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
         return true;
-    }
-
-    public static class MyUserInfo implements UserInfo, UIKeyboardInteractive {
-
-        @Override
-        public String getPassphrase() {
-            return null;
-        }
-        @Override
-        public String getPassword() {
-            return null;
-        }
-        @Override
-        public boolean promptPassphrase(String arg0) {
-            return false;
-        }
-        @Override
-        public boolean promptPassword(String arg0) {
-            return false;
-        }
-        @Override
-        public boolean promptYesNo(String arg0) {
-            return false;
-        }
-        @Override
-        public void showMessage(String arg0) {
-        }
-        @Override
-        public String[] promptKeyboardInteractive(String arg0, String arg1,
-                                                  String arg2, String[] arg3, boolean[] arg4) {
-            return null;
-        }
     }
 
 }

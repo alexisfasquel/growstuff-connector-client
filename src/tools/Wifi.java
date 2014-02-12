@@ -77,23 +77,17 @@ public class Wifi {
 
     public static boolean checkIpAdress() {
         try {
-            Thread.sleep(5000);
-            //Checking for an ip adress
-            if(getip()) {
-                System.out.println("YAY : IP POWA");
-                return true;
-            } else {
-                System.out.println("NO LUCK, retrying");
-                //If no ip retrying one more time and returning result
-                Thread.sleep(5000);
+
+            for (int i = 0; i <= 10 ; i++) {
+                Thread.sleep(1000);
                 if(getip()) {
-                    System.out.println("YAY : IP POWA");
+                    System.out.println("Yay! An ip was found!");
                     return true;
-                } else {
-                    System.out.println("BOWOUHOU");
-                    return false;
                 }
             }
+            System.out.println("No ip: no luck this time");
+            return false;
+
         } catch (InterruptedException e) {
             return false;
         }
@@ -119,7 +113,5 @@ public class Wifi {
             return false;
         }
     }
-
-
 
 }
