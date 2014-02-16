@@ -15,7 +15,7 @@ import java.io.InputStream;
 public class RPi {
 
 
-    public static boolean configure(String SSID, String PSK) throws JSchException {
+    public static boolean configure(String SSID, String PSK) {
         JSch jsch=new JSch();
 
 
@@ -23,14 +23,13 @@ public class RPi {
 
 
             Session session = jsch.getSession("pi", "192.168.0.1", 22);
+            Thread.sleep(10000);
 
-
-            //Not a good idea to disable key checking but only way to make it work for now
-            //session.setConfig("StrictHostKeyChecking", "no");
-            jsch.setConfig("StrictHostKeyChecking", "no");
+            session.setUserInfo(new Infos());
             session.setPassword("growstuff");
-            Thread.sleep(2000);
-            session.connect(30000);
+
+            session.connect();
+
 
 
             Channel channel = session.openChannel("exec");
@@ -39,33 +38,50 @@ public class RPi {
 
             channel.setInputStream(null);
 
-            ((ChannelExec)channel).setErrStream(System.err);
-            InputStream in=channel.getInputStream();
-
-            channel.connect(30000);
-
-
-            byte[] tmp=new byte[1024];
-            while(true){
-                while(in.available()>0){
-                    int i=in.read(tmp, 0, 1024);
-                    if(i<0)break;
-                    System.out.print(new String(tmp, 0, i));
-                }
-                if(channel.isClosed()){
-                    System.out.println("exit-status: "+channel.getExitStatus());
-                    break;
-                }
-                try{Thread.sleep(1000);}catch(Exception ee){}
-            }
+            channel.connect();
+            Thread.sleep(1000);
 
             channel.disconnect();
             session.disconnect();
 
         } catch (Exception e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            e.printStackTrace();
+            return false;
         }
         return true;
+
+    }
+
+
+    private static class Infos implements UserInfo {
+
+        @Override
+        public String getPassphrase() {
+            return null;  //To change body of implemented methods use File | Settings | File Templates.
+        }
+
+        @Override
+        public String getPassword() {
+            return null;  //To change body of implemented methods use File | Settings | File Templates.
+        }
+
+        @Override
+        public boolean promptPassword(String s) {
+           return true;
+        }
+
+        @Override
+        public boolean promptPassphrase(String s) {
+            return true;
+        }
+
+        @Override
+        public boolean promptYesNo(String s) {
+            return true;
+        }
+
+        @Override
+        public void showMessage(String s) {}
     }
 
 }

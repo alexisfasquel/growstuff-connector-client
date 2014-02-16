@@ -7,6 +7,8 @@ import ui.components.Header;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 /**
  * Created with IntelliJ IDEA.
@@ -30,8 +32,8 @@ public class MainPanel extends JPanel {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         mHeader = new Header();
-        mBody = new Body();
         mFooter = new Footer();
+        mBody = new Body(mFooter);
 
         setBackground(GrowRes.GREEN);
 
@@ -67,6 +69,7 @@ public class MainPanel extends JPanel {
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2.drawImage(mLogo, 20, 15, mLogo.getWidth(null)/2, mLogo.getHeight(null)/2, null);
     }
+
 
     //Animating a little bit (yep, I know, that's ugly)
     private class DisapearAnimation extends Thread {

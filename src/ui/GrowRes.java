@@ -14,12 +14,13 @@ public class GrowRes {
     //-----------------------------------------------------------------
     public final static Color GREEN = new Color(0x589a73);
     public final static Color WHITE = new Color(0xffffff);
+    public final static Color GREY = new Color(0xabccb9);
 
 
     //-----------------------------------------------------------------
     //                            STRINGS
     //-----------------------------------------------------------------
-    public final static String STR_SUCCES_BUTTON = "Configure  ";
+    public final static String STR_SUCCES_BUTTON = "Quit  ";
     public final static String STR_FAILED_BUTTON = "Try again  ";
     public final static String STR_CONFIGURE_BUTTON = "Configure  ";
     public final static String STR_WAITING_LABEL = "<html><head><style type=\"text/css\">" +
@@ -43,7 +44,7 @@ public class GrowRes {
 
     public static Font getFont(int size, boolean bold) {
         try {
-            if(bold) {
+            if (bold) {
                 if(mFontBold == null)
                     mFontBold = Font.createFont(Font.TRUETYPE_FONT, new File("res/font/font_bold.ttf"));
                 return mFontBold.deriveFont((float)size);
@@ -69,11 +70,15 @@ public class GrowRes {
     public static int LOADING_1 = 4;
     public static int LOADING_2 = 5;
     public static int LOADING_3 = 6;
+    public static int HIDE = 7;
+    public static int SHOW = 8;
 
     private static BufferedImage mLogo = null;
     private static BufferedImage mArrowGreen = null;
     private static BufferedImage mArrowWhite = null;
     private static BufferedImage mReload = null;
+    private static BufferedImage mHide = null;
+    private static BufferedImage mShow = null;
     private static BufferedImage mLoading1 = null;
     private static BufferedImage mLoading2 = null;
     private static BufferedImage mLoading3 = null;
@@ -82,10 +87,10 @@ public class GrowRes {
 
 
     public static BufferedImage getImage(int imageID) {
-        if(!mLoaded) {
+        if (!mLoaded) {
             loadImages();
         }
-        if(imageID == LOGO) {
+        if (imageID == LOGO) {
             return mLogo;
         } else if (imageID == ARROW_GREEN) {
             return mArrowGreen;
@@ -97,10 +102,14 @@ public class GrowRes {
             return mLoading2;
         } else if (imageID == LOADING_3) {
             return mLoading3;
-        } else {
-
+        } else if (imageID == HIDE) {
+            return mHide;
+        } else if (imageID == SHOW) {
+            return mShow;
+        } else if (imageID == RELOAD) {
             return mReload;
         }
+        return null;
     }
 
     private static void loadImages() {
@@ -113,6 +122,8 @@ public class GrowRes {
             mLoading1 = ImageIO.read(new File("res/loading_1.png"));
             mLoading2 = ImageIO.read(new File("res/loading_2.png"));
             mLoading3 = ImageIO.read(new File("res/loading_3.png"));
+            mShow = ImageIO.read(new File("res/show_ico.png"));
+            mHide = ImageIO.read(new File("res/hide_ico.png"));
 
         } catch (IOException e) {
             System.out.println(e.getMessage());

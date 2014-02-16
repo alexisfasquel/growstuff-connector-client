@@ -7,48 +7,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/components/Body.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/MainPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/components/ReloadButton.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ui/Body.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ui/Footer.java" afterPath="$PROJECT_DIR$/src/ui/components/Footer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ui/GreenCaret.java" afterPath="$PROJECT_DIR$/src/ui/components/GreenCaret.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ui/Header.java" afterPath="$PROJECT_DIR$/src/ui/components/Header.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/reload_ico.png" afterPath="$PROJECT_DIR$/res/reload_ico.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/components/Body.java" afterPath="$PROJECT_DIR$/src/ui/components/Body.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/components/Footer.java" afterPath="$PROJECT_DIR$/src/ui/components/Footer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/GrowRes.java" afterPath="$PROJECT_DIR$/src/ui/GrowRes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/LoadingPanel.java" afterPath="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/MainPanel.java" afterPath="$PROJECT_DIR$/src/ui/MainPanel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/RPi.java" afterPath="$PROJECT_DIR$/src/tools/RPi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/components/WhiteLabel.java" afterPath="$PROJECT_DIR$/src/ui/components/WhiteLabel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/Wifi.java" afterPath="$PROJECT_DIR$/src/tools/Wifi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/components/ReloadButton.java" afterPath="$PROJECT_DIR$/src/ui/components/ReloadButton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/Window.java" afterPath="$PROJECT_DIR$/src/ui/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GrowStuff.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392022220874" ignored="false" />
+    <file path="/fragment.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169041568" ignored="false" />
     <file path="/UsbDetector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390873745036" ignored="false" />
-    <file path="/Dummy.txt" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392167117043" ignored="false" />
+    <file path="/Dummy.txt" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392572848716" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteDeviceSPI.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteHost.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteUSBListener.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
-    <file path="/Window.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392165991374" ignored="false" />
+    <file path="/Window.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392505991562" ignored="false" />
     <file path="/WifiDetector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391105060619" ignored="false" />
     <file path="/Header.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392040085751" ignored="false" />
-    <file path="/GrowRes.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392043354686" ignored="false" />
-    <file path="/Body.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392162651680" ignored="false" />
-    <file path="/Footer.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392043225077" ignored="false" />
+    <file path="/GrowRes.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392489272413" ignored="false" />
+    <file path="/Body.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392556926063" ignored="false" />
+    <file path="/Footer.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392556938192" ignored="false" />
     <file path="/FancyCaret.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391098576910" ignored="false" />
     <file path="/Wifi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392166287572" ignored="false" />
     <file path="/RPiConnector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391431036293" ignored="false" />
-    <file path="/RPi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392166875174" ignored="false" />
+    <file path="/RPi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392557084520" ignored="false" />
     <file path="/LoadingPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392043442872" ignored="false" />
     <file path="/WhiteLabel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392041654368" ignored="false" />
     <file path="/animation.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392001788404" ignored="false" />
     <file path="/AppearAnimation.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392001859948" ignored="false" />
     <file path="/DisappearAnimation.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392001948556" ignored="false" />
-    <file path="/ReloadButton.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392033072359" ignored="false" />
-    <file path="/MainPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392162583512" ignored="false" />
+    <file path="/ReloadButton.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392488367777" ignored="false" />
+    <file path="/MainPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392502615403" ignored="false" />
     <file path="/GreenCaret.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392043058996" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/build.gradle" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169586443" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/gen/com/evento/geekftour/BuildConfig.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169679766" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/java/com/evento/geekftour/service/GoogleService.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392168445491" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/AndroidManifest.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169670535" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/gen/com/evento/geekftour/Manifest.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169672397" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/gen/com/evento/geekftour/R.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169672397" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/layout/activity_login.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392222625851" ignored="false" />
+    <file path="/activity_login.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392222622605" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/layout/component_ignite.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392223174085" ignored="false" />
+    <file path="/component_ignite.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392223161498" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/layout/component_article.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392223236263" ignored="false" />
+    <file path="/component_article.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392223233530" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/java/com/evento/geekftour/main/MainActivity.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392176467535" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/java/com/evento/geekftour/main/LoginActivity.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392176467535" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/drawable/box_shadow.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392222121882" ignored="false" />
+    <file path="/box_shadow.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392222119666" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/layout/fragment_article.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392223800981" ignored="false" />
+    <file path="/fragment_article.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392223799142" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/layout/fragment_geekftour.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392228283982" ignored="false" />
+    <file path="/fragment_geekftour.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392227408400" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/background.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392420805249" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/red_slider.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392513515095" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/red_control.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392514862659" ignored="false" />
+    <file path="/red_control.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392514862659" ignored="false" />
+    <file path="/red_slider.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392513514008" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/layout/main.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392518801798" ignored="false" />
+    <file path="/main.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392551012672" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/values/colors.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392512981504" ignored="false" />
+    <file path="/colors.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392512981504" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/control_red.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392518063498" ignored="false" />
+    <file path="/control_red.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392552629127" ignored="false" />
+    <file path="/slider_blue.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392561971126" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/slider_blue.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392517329475" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/slider_red.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392517345618" ignored="false" />
+    <file path="/slider_red.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392561961048" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/res/drawable/control_blue.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392517361651" ignored="false" />
+    <file path="/control_blue.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392552590473" ignored="false" />
+    <file path="$USER_HOME$/Documents/led-strip-controller/src/com/aleks/letstrip/MainActivity.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392517600596" ignored="false" />
+    <file path="/MainActivity.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392517567069" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/layout/main.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392562744457" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/button_scan.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392550990132" ignored="false" />
+    <file path="/button_scan.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392550988086" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/control_blue.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392552596086" ignored="false" />
+    <file path="/control_green.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392552611422" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/control_green.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392552614441" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/control_red.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392552634006" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/slider_green.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392561953939" ignored="false" />
+    <file path="/slider_green.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392561952862" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/slider_red.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392561962485" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/drawable/slider_blue.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392561972431" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/layout/ListActivity.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392572511587" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/src/com/aleks/letstrip/MainActivity.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392572945892" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/layout/list_activity.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392572841409" ignored="false" />
+    <file path="/list_activity.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392572840362" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/res/layout/fragment_blog.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573412941" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/layout/list_item.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392572851774" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/res/layout/component_list_item.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573209064" ignored="false" />
+    <file path="/component_list_item.xml" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573189830" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/src/com/aleks/letstrip/ListActivity.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392574072548" ignored="false" />
+    <file path="$USER_HOME$/Documents/GeekFtourApp/GeekFtour/src/main/java/com/evento/geekftour/fragment/Blog.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573888079" ignored="false" />
+    <file path="/Blog.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573933386" ignored="false" />
+    <file path="/ArduinoBluetooth.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573972553" ignored="false" />
+    <file path="$USER_HOME$/led-strip-controller/src/com/aleks/letstrip/ArduinoBluetooth.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573977388" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +120,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -100,7 +157,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -113,21 +170,34 @@
       <file leaf-file-name="Window.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="35" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1576#1918#0" expanded="true" />
-                <element signature="e#1715#1892#0" expanded="true" />
-                <element signature="e#1873#1874#0" expanded="true" />
-                <element signature="e#1907#1908#0" expanded="true" />
-              </folding>
+            <state line="96" column="45" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RPi.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RPi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="29" selection-start="800" selection-end="800" vertical-scroll-proportion="0.44578314">
+            <state line="40" column="11" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Util.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Util.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="-22.12">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Session.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Session.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="-8.4">
               <folding />
             </state>
           </provider>
@@ -136,27 +206,25 @@
       <file leaf-file-name="Wifi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="12" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0">
+            <state line="16" column="138" selection-start="328" selection-end="422" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
+      <file leaf-file-name="Footer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/components/Footer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="92" selection-start="838" selection-end="838" vertical-scroll-proportion="12.6">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="53" column="26" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadingPanel.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LoadingPanel.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="46" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.0">
+            <state line="63" column="53" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.1399689">
               <folding />
             </state>
           </provider>
@@ -165,7 +233,7 @@
       <file leaf-file-name="GrowRes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="61" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
+            <state line="22" column="56" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,7 +242,7 @@
       <file leaf-file-name="ReloadButton.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/components/ReloadButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="44" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.0">
+            <state line="48" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,7 +251,7 @@
       <file leaf-file-name="Body.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/components/Body.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="25" selection-start="1818" selection-end="1825" vertical-scroll-proportion="0.0">
+            <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="-10.04">
               <folding />
             </state>
           </provider>
@@ -219,23 +287,24 @@
         <option value="$PROJECT_DIR$/src/ui/animation/AppearAnimation.java" />
         <option value="$PROJECT_DIR$/src/ui/Body.java" />
         <option value="$PROJECT_DIR$/src/ui/components/WhiteLabel.java" />
-        <option value="$PROJECT_DIR$/src/ui/components/Footer.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Header.java" />
-        <option value="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/components/GreenCaret.java" />
-        <option value="$PROJECT_DIR$/src/ui/components/ReloadButton.java" />
-        <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
-        <option value="$PROJECT_DIR$/src/ui/components/Body.java" />
-        <option value="$PROJECT_DIR$/src/ui/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/tools/Wifi.java" />
+        <option value="$PROJECT_DIR$/src/ui/components/ReloadButton.java" />
+        <option value="$PROJECT_DIR$/src/ui/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
         <option value="$PROJECT_DIR$/src/ui/Window.java" />
+        <option value="$PROJECT_DIR$/src/ui/components/Body.java" />
+        <option value="$PROJECT_DIR$/src/ui/components/Footer.java" />
         <option value="$PROJECT_DIR$/src/tools/RPi.java" />
+        <option value="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="22" />
-    <option name="width" value="1920" />
+    <option name="width" value="1676" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -272,7 +341,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -379,6 +447,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,7 +465,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GeekFtourApp" />
+    <property name="last_opened_file_path" value="$USER_HOME$/led-strip-controller" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="265" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1059" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1059" />
@@ -581,25 +650,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1028" extended-state="0" />
-    <editor active="false" />
+    <frame x="4" y="22" width="1676" height="1028" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944787" sideWeight="0.65045595" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.67180616" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.7389868" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39867842" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16932516" sideWeight="0.2973568" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31449893" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31387666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.64977974" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12753469" sideWeight="0.67070484" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2610132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14662577" sideWeight="0.7389868" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2610132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -678,112 +747,97 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/awt/AlphaComposite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="688" column="0" selection-start="26836" selection-end="26836" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/Footer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="50" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="688" column="0" selection-start="26836" selection-end="26836" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/components/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="37" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="37" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/components/GreenCaret.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="21" column="24" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/components/WhiteLabel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="26" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="61" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="46" selection-start="1935" selection-end="1935" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/Body.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="25" selection-start="1818" selection-end="1825" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/ReloadButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="44" selection-start="1775" selection-end="1775" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="31" column="26" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="92" selection-start="838" selection-end="838" vertical-scroll-proportion="12.6">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="12" selection-start="2860" selection-end="2860" vertical-scroll-proportion="0.0">
+        <state line="34" column="31" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="35" selection-start="2503" selection-end="2503" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1576#1918#0" expanded="true" />
-            <element signature="e#1715#1892#0" expanded="true" />
-            <element signature="e#1873#1874#0" expanded="true" />
-            <element signature="e#1907#1908#0" expanded="true" />
-          </folding>
+        <state line="96" column="45" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Session.class">
+    <entry file="file://$PROJECT_DIR$/src/ui/components/ReloadButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="0" selection-start="10704" selection-end="10704" vertical-scroll-proportion="0.34710744">
+        <state line="48" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="56" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/Footer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="26" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/Body.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="-10.04">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Util.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.894822">
+        <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="-22.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="-8.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="138" selection-start="328" selection-end="422" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="29" selection-start="800" selection-end="800" vertical-scroll-proportion="0.44578314">
+        <state line="40" column="11" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="53" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.1399689">
           <folding />
         </state>
       </provider>

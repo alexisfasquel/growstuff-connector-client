@@ -119,8 +119,10 @@ public class LoadingPanel extends JPanel {
 
         @Override
         public void run() {
-            while(mContinue) {
-                try {
+
+            try {
+                Thread.sleep(1500);
+                while(mContinue) {
                     Thread.sleep(1000);
                     mImage = GrowRes.getImage(GrowRes.LOADING_2);
                     repaint();
@@ -130,8 +132,8 @@ public class LoadingPanel extends JPanel {
                     Thread.sleep(1000);
                     mImage = GrowRes.getImage(GrowRes.LOADING_1);
                     repaint();
-                } catch (InterruptedException e) {}
-            }
+                }
+            } catch (InterruptedException e) {}
         }
 
         @Override

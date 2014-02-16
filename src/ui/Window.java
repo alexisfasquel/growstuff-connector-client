@@ -31,11 +31,13 @@ public class Window extends JFrame {
     public Window() {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800, 500);
+        setSize(850, 520);
+        setMinimumSize(new Dimension(850, 520));
 
         setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
         getContentPane().setBackground(GrowRes.GREEN);
 
+        setLocationRelativeTo(null);
 
         init();
 
@@ -93,21 +95,16 @@ public class Window extends JFrame {
         @Override
         public Boolean doInBackground() {
             String ssid = mMainPanel.getSSID().replace(":", " ").trim();
-            String password = mMainPanel.getPSK();
+            String password = "on3stbi3ndansc3tt3nouv3ll3maison";//mMainPanel.getPSK();
             if(Wifi.connect(ssid, password)) {
                 if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
-                    try {
-                        RPi.configure(ssid, password);
+                    if(RPi.configure(ssid, password)) {
                         Wifi.connect(ssid, password);
-                    } catch (JSchException e1) {
-                        System.out.println(e1.getMessage());
-                        return false;
+                        return true;
                     }
-                    return true;
                 }
-            } else {
-                return false;
             }
+            Wifi.connect(ssid, password);
             return false;
         }
 

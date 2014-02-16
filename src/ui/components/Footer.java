@@ -5,8 +5,7 @@ import ui.GrowRes;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -48,10 +47,17 @@ public class Footer extends JPanel {
 
         mArrowIcoWhite = GrowRes.getImage(GrowRes.ARROW_WHITE);
         mArrowIcoGreen = GrowRes.getImage(GrowRes.ARROW_GREEN);
+
     }
 
-    public void addActionListener(AbstractAction action) {
+    @Override
+    public void setEnabled(boolean yesorno) {
+        mApply.setEnabled(yesorno);
+    }
+
+    public void addActionListener(ActionListener action) {
         mApply.addActionListener(action);
+        mApply.registerKeyboardAction(action, KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0), WHEN_IN_FOCUSED_WINDOW);
     }
 
     public void setOpacity(float opacity) {
@@ -137,5 +143,6 @@ public class Footer extends JPanel {
 
         @Override
         public void mouseExited(MouseEvent e) {}
+
     }
 }
