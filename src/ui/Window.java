@@ -1,12 +1,13 @@
 package ui;
 
-import com.jcraft.jsch.JSchException;
+import tools.ConfigReader;
 import tools.RPi;
 import tools.Wifi;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.File;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -19,7 +20,7 @@ import java.util.concurrent.ExecutionException;
 public class Window extends JFrame {
 
     private MainPanel mMainPanel;
-    private LoadingPanel mLoadingPanel = new LoadingPanel();
+    private LoadingPanel mLoadingPanel;
 
     private boolean mSucces = false;
 
@@ -39,13 +40,22 @@ public class Window extends JFrame {
 
         setLocationRelativeTo(null);
 
-        init();
 
+        initConfiguration();
+
+
+        setContentPane(new DropPanel(new DropPanel.DropListener() {
+            @Override
+            public void onDroped(File droppedfile) {
+                ConfigReader.getPlantId(droppedfile);
+                setContentPane(mMainPanel);
+                revalidate();
+            }
+        }));
         setVisible(true);
     }
 
-    private void init() {
-        remove(mLoadingPanel);
+    private void initConfiguration() {
         mLoadingPanel = new LoadingPanel();
         mLoadingPanel.addActionListener(new AbstractAction() {
             @Override
@@ -56,7 +66,7 @@ public class Window extends JFrame {
                         if(mSucces) {
                             System.exit(0);
                         } else {
-                            init();
+                            initConfiguration();
                         }
                     }
                 });
@@ -75,13 +85,10 @@ public class Window extends JFrame {
                 });
             }
         });
-        add(mMainPanel);
-        revalidate();
     }
 
     private void configure() {
-        remove(mMainPanel);
-        add(mLoadingPanel);
+        setContentPane(mLoadingPanel);
         revalidate();
         mLoadingPanel.appear();
         new Connector().execute();
@@ -95,7 +102,7 @@ public class Window extends JFrame {
         @Override
         public Boolean doInBackground() {
             String ssid = mMainPanel.getSSID().replace(":", " ").trim();
-            String password = "on3stbi3ndansc3tt3nouv3ll3maison";//mMainPanel.getPSK();
+            String password = mMainPanel.getPSK();
             if(Wifi.connect(ssid, password)) {
                 if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
                     if(RPi.configure(ssid, password)) {

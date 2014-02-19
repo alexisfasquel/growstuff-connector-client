@@ -6,19 +6,26 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="" />
+    <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tools/ConfigReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/DropPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/GrowRes.java" afterPath="$PROJECT_DIR$/src/ui/GrowRes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/LoadingPanel.java" afterPath="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/Window.java" afterPath="$PROJECT_DIR$/src/ui/Window.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="GrowStuff.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169041568" ignored="false" />
     <file path="/UsbDetector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390873745036" ignored="false" />
-    <file path="/Dummy.txt" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392574137208" ignored="false" />
+    <file path="/Dummy.txt" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392718554363" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteDeviceSPI.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteHost.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteUSBListener.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
-    <file path="/Window.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392505991562" ignored="false" />
+    <file path="/Window.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392749284278" ignored="false" />
     <file path="/WifiDetector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391105060619" ignored="false" />
     <file path="/Header.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392040085751" ignored="false" />
-    <file path="/GrowRes.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392489272413" ignored="false" />
+    <file path="/GrowRes.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392745387315" ignored="false" />
     <file path="/Body.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392556926063" ignored="false" />
     <file path="/Footer.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392556938192" ignored="false" />
     <file path="/FancyCaret.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391098576910" ignored="false" />
@@ -96,6 +103,9 @@
     <file path="/Blog.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573933386" ignored="false" />
     <file path="/ArduinoBluetooth.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573972553" ignored="false" />
     <file path="$USER_HOME$/led-strip-controller/src/com/aleks/letstrip/ArduinoBluetooth.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573977388" ignored="false" />
+    <file path="/DragDropPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392741330487" ignored="false" />
+    <file path="/ConfigReader.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392748376113" ignored="false" />
+    <file path="/DropPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392749449403" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +120,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -147,6 +156,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/ui/Window.java" line="50" class="ui.Window$1" package="ui">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -166,24 +192,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Util.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="-22.12">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Session.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Session.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="-8.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Wifi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,42 +201,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Footer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/components/Footer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="26" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoadingPanel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="19" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
+            <state line="151" column="4" selection-start="4164" selection-end="4877" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show_ico.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/show_ico.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="MainPanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="73" column="4" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hide_ico.png" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/hide_ico.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="Window.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="43" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#965#1222#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1382#1880#0" expanded="true" />
+                <element signature="e#1524#1854#0" expanded="true" />
+                <element signature="e#1835#1836#0" expanded="true" />
+                <element signature="e#1869#1870#0" expanded="true" />
+                <element signature="e#1959#2301#0" expanded="true" />
+                <element signature="e#2098#2275#0" expanded="true" />
+                <element signature="e#2256#2257#0" expanded="true" />
+                <element signature="e#2290#2291#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DropPanel.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ui/DropPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="45" selection-start="2331" selection-end="2331" vertical-scroll-proportion="1.0186626">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tools/ConfigReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="40" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GrowRes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="56" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
+            <state line="69" column="40" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -237,7 +271,7 @@
       <file leaf-file-name="Body.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/components/Body.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="-10.04">
+            <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -268,28 +302,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ui/animation.java" />
-        <option value="$PROJECT_DIR$/src/ui/animation/DisappearAnimation.java" />
-        <option value="$PROJECT_DIR$/src/ui/animation/AppearAnimation.java" />
-        <option value="$PROJECT_DIR$/src/ui/Body.java" />
         <option value="$PROJECT_DIR$/src/ui/components/WhiteLabel.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Header.java" />
         <option value="$PROJECT_DIR$/src/ui/components/GreenCaret.java" />
         <option value="$PROJECT_DIR$/src/tools/Wifi.java" />
         <option value="$PROJECT_DIR$/src/ui/components/ReloadButton.java" />
         <option value="$PROJECT_DIR$/src/ui/MainPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
-        <option value="$PROJECT_DIR$/src/ui/Window.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Body.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Footer.java" />
         <option value="$PROJECT_DIR$/src/tools/RPi.java" />
         <option value="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
+        <option value="$PROJECT_DIR$/src/DragDropPanel.java" />
+        <option value="$PROJECT_DIR$/src/ui/DragDropPanel.java" />
+        <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
+        <option value="$PROJECT_DIR$/src/tools/ConfigReader.java" />
+        <option value="$PROJECT_DIR$/src/ui/Window.java" />
+        <option value="$PROJECT_DIR$/src/ui/DropPanel.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="22" />
+    <option name="x" value="1680" />
+    <option name="y" value="52" />
     <option name="width" value="1676" />
     <option name="height" value="1028" />
   </component>
@@ -326,7 +360,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -427,12 +460,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrowStuff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GrowStuff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -440,18 +492,18 @@
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="259" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="261" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="261" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="259" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="259" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/led-strip-controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="265" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1059" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1059" />
@@ -462,23 +514,23 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="project.propCompiler" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -498,6 +550,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -525,19 +590,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -636,13 +688,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1676" height="1028" extended-state="6" />
+    <frame x="1680" y="52" width="1676" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944787" sideWeight="0.65045595" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.7389868" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39867842" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -657,6 +708,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2610132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -726,45 +778,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ui/components/Header.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="37" selection-start="520" selection-end="520" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/GreenCaret.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/WhiteLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="26" selection-start="805" selection-end="805" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="773" selection-end="773" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="45" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/components/ReloadButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="0" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="56" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -778,21 +794,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/components/Body.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="-10.04">
+        <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Util.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="-22.12">
+        <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Session.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="-8.4">
+        <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -811,11 +827,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/res/hide_ico.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/show_ico.png">
@@ -823,9 +837,66 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/hide_ico.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="40" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/awt/dnd/DropTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="315" column="0" selection-start="10071" selection-end="10071" vertical-scroll-proportion="0.33281493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/ConfigReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="40" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="151" column="4" selection-start="4164" selection-end="4877" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="4" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="43" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#965#1222#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1382#1880#0" expanded="true" />
+            <element signature="e#1524#1854#0" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+            <element signature="e#1869#1870#0" expanded="true" />
+            <element signature="e#1959#2301#0" expanded="true" />
+            <element signature="e#2098#2275#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/DropPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="45" selection-start="2331" selection-end="2331" vertical-scroll-proportion="1.0186626">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

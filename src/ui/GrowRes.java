@@ -72,6 +72,8 @@ public class GrowRes {
     public static int LOADING_3 = 6;
     public static int HIDE = 7;
     public static int SHOW = 8;
+    public static int DROP = 9;
+    public static int DROP_FOCUS = 10;
 
     private static BufferedImage mLogo = null;
     private static BufferedImage mArrowGreen = null;
@@ -82,6 +84,8 @@ public class GrowRes {
     private static BufferedImage mLoading1 = null;
     private static BufferedImage mLoading2 = null;
     private static BufferedImage mLoading3 = null;
+    private static BufferedImage mDrop = null;
+    private static BufferedImage mDropFocus = null;
 
     private static boolean mLoaded = false;
 
@@ -108,6 +112,10 @@ public class GrowRes {
             return mShow;
         } else if (imageID == RELOAD) {
             return mReload;
+        } else if (imageID == DROP) {
+            return mDrop;
+        } else if (imageID == DROP_FOCUS) {
+            return mDropFocus;
         }
         return null;
     }
@@ -124,6 +132,8 @@ public class GrowRes {
             mLoading3 = ImageIO.read(new File("res/loading_3.png"));
             mShow = ImageIO.read(new File("res/show_ico.png"));
             mHide = ImageIO.read(new File("res/hide_ico.png"));
+            mDrop = ImageIO.read(new File("res/drop_ico.png"));
+            mDropFocus = ImageIO.read(new File("res/drop_focus_ico.png"));
 
         } catch (IOException e) {
             System.out.println(e.getMessage());

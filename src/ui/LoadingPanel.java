@@ -80,10 +80,8 @@ public class LoadingPanel extends JPanel {
             mWhiteLabel.setText(GrowRes.STR_FAILED_LABEL);
             mFooter.setText(GrowRes.STR_FAILED_BUTTON);
         }
-
         new FooterAppearAnimation().start();
     }
-
 
     @Override
     public void paint(Graphics g) {
