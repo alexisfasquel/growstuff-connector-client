@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tools/ConfigReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ui/DropPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/GrowRes.java" afterPath="$PROJECT_DIR$/src/ui/GrowRes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/LoadingPanel.java" afterPath="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/ConfigReader.java" afterPath="$PROJECT_DIR$/src/tools/ConfigReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/Window.java" afterPath="$PROJECT_DIR$/src/ui/Window.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -18,20 +15,20 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169041568" ignored="false" />
     <file path="/UsbDetector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390873745036" ignored="false" />
-    <file path="/Dummy.txt" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392718554363" ignored="false" />
+    <file path="/Dummy.txt" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1393179443190" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteDeviceSPI.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteHost.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
     <file path="$PROJECT_DIR$/src/remote/RemoteUSBListener.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1390868392145" ignored="false" />
-    <file path="/Window.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392749284278" ignored="false" />
+    <file path="/Window.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1393255677295" ignored="false" />
     <file path="/WifiDetector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391105060619" ignored="false" />
     <file path="/Header.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392040085751" ignored="false" />
-    <file path="/GrowRes.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392745387315" ignored="false" />
+    <file path="/GrowRes.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392975914731" ignored="false" />
     <file path="/Body.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392556926063" ignored="false" />
     <file path="/Footer.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392556938192" ignored="false" />
     <file path="/FancyCaret.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391098576910" ignored="false" />
-    <file path="/Wifi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392166287572" ignored="false" />
+    <file path="/Wifi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1393213100190" ignored="false" />
     <file path="/RPiConnector.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1391431036293" ignored="false" />
-    <file path="/RPi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392557084520" ignored="false" />
+    <file path="/RPi.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1393214241053" ignored="false" />
     <file path="/LoadingPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392043442872" ignored="false" />
     <file path="/WhiteLabel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392041654368" ignored="false" />
     <file path="/animation.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392001788404" ignored="false" />
@@ -104,7 +101,7 @@
     <file path="/ArduinoBluetooth.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573972553" ignored="false" />
     <file path="$USER_HOME$/led-strip-controller/src/com/aleks/letstrip/ArduinoBluetooth.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392573977388" ignored="false" />
     <file path="/DragDropPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392741330487" ignored="false" />
-    <file path="/ConfigReader.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392748376113" ignored="false" />
+    <file path="/ConfigReader.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1393213903828" ignored="false" />
     <file path="/DropPanel.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392749449403" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +154,22 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/ui/Window.java" line="50" class="ui.Window$1" package="ui">
+      <breakpoint url="file://$PROJECT_DIR$/src/ui/Window.java" line="51" class="ui.Window$1" package="ui">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/tools/Wifi.java" line="88" class="tools.Wifi" package="tools">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -186,7 +198,7 @@
       <file leaf-file-name="RPi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="11" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
+            <state line="26" column="48" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -195,56 +207,19 @@
       <file leaf-file-name="Wifi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="138" selection-start="328" selection-end="422" vertical-scroll-proportion="0.0">
+            <state line="19" column="51" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoadingPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/LoadingPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="4" selection-start="4164" selection-end="4877" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="4" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Window.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Window.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="43" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+            <state line="107" column="73" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.55825245">
               <folding>
-                <element signature="e#965#1222#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1382#1880#0" expanded="true" />
-                <element signature="e#1524#1854#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
-                <element signature="e#1869#1870#0" expanded="true" />
-                <element signature="e#1959#2301#0" expanded="true" />
-                <element signature="e#2098#2275#0" expanded="true" />
-                <element signature="e#2256#2257#0" expanded="true" />
-                <element signature="e#2290#2291#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DropPanel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ui/DropPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="45" selection-start="2331" selection-end="2331" vertical-scroll-proportion="1.0186626">
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#996#1259#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -253,26 +228,10 @@
       <file leaf-file-name="ConfigReader.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/ConfigReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="40" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrowRes.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="40" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Body.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/components/Body.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="11" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="52" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -305,26 +264,26 @@
         <option value="$PROJECT_DIR$/src/ui/components/WhiteLabel.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Header.java" />
         <option value="$PROJECT_DIR$/src/ui/components/GreenCaret.java" />
-        <option value="$PROJECT_DIR$/src/tools/Wifi.java" />
         <option value="$PROJECT_DIR$/src/ui/components/ReloadButton.java" />
         <option value="$PROJECT_DIR$/src/ui/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Body.java" />
         <option value="$PROJECT_DIR$/src/ui/components/Footer.java" />
-        <option value="$PROJECT_DIR$/src/tools/RPi.java" />
         <option value="$PROJECT_DIR$/src/ui/LoadingPanel.java" />
         <option value="$PROJECT_DIR$/src/DragDropPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/DragDropPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
-        <option value="$PROJECT_DIR$/src/tools/ConfigReader.java" />
-        <option value="$PROJECT_DIR$/src/ui/Window.java" />
         <option value="$PROJECT_DIR$/src/ui/DropPanel.java" />
+        <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
+        <option value="$PROJECT_DIR$/src/tools/Wifi.java" />
+        <option value="$PROJECT_DIR$/src/tools/ConfigReader.java" />
+        <option value="$PROJECT_DIR$/src/tools/RPi.java" />
+        <option value="$PROJECT_DIR$/src/ui/Window.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1680" />
     <option name="y" value="52" />
-    <option name="width" value="1676" />
+    <option name="width" value="1920" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -446,46 +405,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GrowStuff" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GrowStuff" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GrowStuff" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GrowStuff" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -687,24 +614,44 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="52" width="1676" height="1028" extended-state="0" />
+    <frame x="1680" y="52" width="1920" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944787" sideWeight="0.65045595" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.7389868" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39867842" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39658847" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16932516" sideWeight="0.2973568" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31387666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.64977974" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31343284" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.7389868" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14662577" sideWeight="0.7389868" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12753469" sideWeight="0.7389868" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2610132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -801,30 +748,12 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Util.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="60" column="0" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/jsch-0.1.50.jar!/com/jcraft/jsch/Session.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="138" selection-start="328" selection-end="422" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="11" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="182" column="0" selection-start="9172" selection-end="9172" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/hide_ico.png">
@@ -837,23 +766,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="40" selection-start="3334" selection-end="3334" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/src.zip!/java/awt/dnd/DropTarget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="315" column="0" selection-start="10071" selection-end="10071" vertical-scroll-proportion="0.33281493">
+        <state line="315" column="0" selection-start="10071" selection-end="10071" vertical-scroll-proportion="0.33281493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="4" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/ConfigReader.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/GrowRes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="40" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+        <state line="14" column="56" selection-start="407" selection-end="415" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -865,36 +792,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MainPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/DropPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="4" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0">
+        <state line="35" column="11" selection-start="866" selection-end="866" vertical-scroll-proportion="0.60178304">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="51" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="48" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/ConfigReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="52" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="43" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+        <state line="107" column="73" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.55825245">
           <folding>
-            <element signature="e#965#1222#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1382#1880#0" expanded="true" />
-            <element signature="e#1524#1854#0" expanded="true" />
-            <element signature="e#1835#1836#0" expanded="true" />
-            <element signature="e#1869#1870#0" expanded="true" />
-            <element signature="e#1959#2301#0" expanded="true" />
-            <element signature="e#2098#2275#0" expanded="true" />
-            <element signature="e#2256#2257#0" expanded="true" />
-            <element signature="e#2290#2291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/DropPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="45" selection-start="2331" selection-end="2331" vertical-scroll-proportion="1.0186626">
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#996#1259#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
           </folding>
         </state>
       </provider>

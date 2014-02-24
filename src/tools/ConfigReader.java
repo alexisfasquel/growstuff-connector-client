@@ -1,6 +1,7 @@
 package tools;
 
-import java.io.File;
+import java.io.*;
+import java.text.ParseException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,6 +14,18 @@ public class ConfigReader {
 
     public static String getPlantId(File configFile) {
 
-        return "";
+        try {
+            FileReader fileReader = new FileReader(configFile);
+            BufferedReader br = new BufferedReader(fileReader);
+            String line;
+            while ((line = br.readLine()) != null) {
+                if(!line.startsWith("#")) {
+                     if(line.startsWith("ID")) {
+                         return line.split("=")[1];
+                     }
+                }
+            }
+        } catch (IOException e) {}
+        return null;
     }
 }

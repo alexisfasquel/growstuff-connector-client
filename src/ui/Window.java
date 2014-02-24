@@ -21,6 +21,7 @@ public class Window extends JFrame {
 
     private MainPanel mMainPanel;
     private LoadingPanel mLoadingPanel;
+    private String mId = null;
 
     private boolean mSucces = false;
 
@@ -47,7 +48,7 @@ public class Window extends JFrame {
         setContentPane(new DropPanel(new DropPanel.DropListener() {
             @Override
             public void onDroped(File droppedfile) {
-                ConfigReader.getPlantId(droppedfile);
+                mId = ConfigReader.getPlantId(droppedfile);
                 setContentPane(mMainPanel);
                 revalidate();
             }
@@ -67,6 +68,8 @@ public class Window extends JFrame {
                             System.exit(0);
                         } else {
                             initConfiguration();
+                            setContentPane(mMainPanel);
+                            revalidate();
                         }
                     }
                 });
@@ -123,7 +126,6 @@ public class Window extends JFrame {
             mLoadingPanel.stop(mSucces);
         }
     }
-
 
 
 
