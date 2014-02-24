@@ -6,11 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tools/ConfigReader.java" afterPath="$PROJECT_DIR$/src/tools/ConfigReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ui/Window.java" afterPath="$PROJECT_DIR$/src/ui/Window.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="316e1973-a86e-4747-966f-ba86a1d48d8e" name="Default" comment="" />
     <ignored path="GrowStuff.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="316e1973-a86e-4747-966f-ba86a1d48d8e" time="1392169041568" ignored="false" />
@@ -169,7 +165,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/tools/Wifi.java" line="88" class="tools.Wifi" package="tools">
+      <breakpoint url="file://$PROJECT_DIR$/src/tools/Wifi.java" line="102" class="tools.Wifi" package="tools">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -195,10 +191,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RPi.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RPi.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="48" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+            <state line="19" column="41" selection-start="435" selection-end="435" vertical-scroll-proportion="0.16329704">
               <folding />
             </state>
           </provider>
@@ -207,16 +203,16 @@
       <file leaf-file-name="Wifi.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="51" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+            <state line="21" column="51" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Window.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Window.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="73" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.55825245">
+            <state line="114" column="39" selection-start="3235" selection-end="3235" vertical-scroll-proportion="-55.2">
               <folding>
                 <element signature="e#996#1259#0" expanded="true" />
                 <element signature="e#1248#1249#0" expanded="true" />
@@ -275,8 +271,8 @@
         <option value="$PROJECT_DIR$/src/ui/GrowRes.java" />
         <option value="$PROJECT_DIR$/src/tools/Wifi.java" />
         <option value="$PROJECT_DIR$/src/tools/ConfigReader.java" />
-        <option value="$PROJECT_DIR$/src/tools/RPi.java" />
         <option value="$PROJECT_DIR$/src/ui/Window.java" />
+        <option value="$PROJECT_DIR$/src/tools/RPi.java" />
       </list>
     </option>
   </component>
@@ -801,14 +797,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/Wifi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="51" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="48" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
+        <state line="21" column="51" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -824,11 +813,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/Window.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="73" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.55825245">
+        <state line="114" column="39" selection-start="3235" selection-end="3235" vertical-scroll-proportion="-55.2">
           <folding>
             <element signature="e#996#1259#0" expanded="true" />
             <element signature="e#1248#1249#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/RPi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="41" selection-start="435" selection-end="435" vertical-scroll-proportion="0.16329704">
+          <folding />
         </state>
       </provider>
     </entry>

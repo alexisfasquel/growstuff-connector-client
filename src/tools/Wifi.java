@@ -17,7 +17,9 @@ public class Wifi {
     private static final String SSID_CMD = "/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I";
     private static final String CONNECTION_CMD = "networksetup -setairportnetwork en0";
     private static final String GETIP_CMD = "ifconfig en0 | grep 'inet' | cut -d\" \" -f2 | awk '{ print $1 }' | tail -1";
+    private static final String PING_CMD = "ping -c 1 -t 1 ***";
 
+    private static final String IP = "192.168.0.1";
 
     private Wifi() {}
 
@@ -75,31 +77,43 @@ public class Wifi {
         }
     }
 
-    public static boolean checkIpAdress() {
-        try {
 
-            for (int i = 0; i <= 10 ; i++) {
-                Thread.sleep(1000);
-                if(getip()) {
-                    System.out.println("Yay! An ip was found!");
-                    return true;
-                }
+    public static boolean isConnected() {
+        for(int i = 0; i < 30 ; i++) {
+            if(ping(IP)) {
+                return true;
             }
-            System.out.println("No ip: no luck this time");
-            return false;
-
-        } catch (InterruptedException e) {
-            return false;
         }
+        return false;
     }
 
+    private static boolean ping(String ip) {
+        Process p;
+        try {
+
+            //Executing the shell command
+            p = Runtime.getRuntime().exec(PING_CMD.replace("***", ip));
+            p.waitFor();
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+            String ping, res = "";
+            while ((ping = reader.readLine()) != null) {
+                res += ping;
+            }
+            if(res.contains("1 packets received")) {
+                return true;
+            }
+        } catch (IOException | InterruptedException e) {
+            return false;
+        }
+        return false;
+    }
 
     private static boolean getip() {
         Process p;
         try {
 
             //Executing the shell command
-            System.out.println(GETIP_CMD);
             p = Runtime.getRuntime().exec(GETIP_CMD);
             p.waitFor();
 

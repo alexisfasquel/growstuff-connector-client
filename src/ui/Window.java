@@ -107,8 +107,8 @@ public class Window extends JFrame {
             String ssid = mMainPanel.getSSID().replace(":", " ").trim();
             String password = mMainPanel.getPSK();
             if(Wifi.connect(ssid, password)) {
-                if (Wifi.connect("GrowStuff", "") && Wifi.checkIpAdress()) {
-                    if(RPi.configure(ssid, password)) {
+                if (Wifi.connect("GrowStuff", "") && Wifi.isConnected()) {
+                    if(RPi.configure(ssid, password, mId)) {
                         Wifi.connect(ssid, password);
                         return true;
                     }
